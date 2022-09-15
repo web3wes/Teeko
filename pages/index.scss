@@ -63,6 +63,7 @@ body {
   font-size: 1.6rem;
   color: #1c1d1f;
   margin: 0;
+  background-color: #8350c0;
 }
 
 code {
@@ -78,22 +79,18 @@ code {
 }
 
 .header {
-  /* This fills 95% of the viewport */
-  height: 95vh;
-  /* //right bottom states which direction the gradient is going to ; */
+  height: 102vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(126, 111, 213, 0.74),
       rgba(84, 25, 194, 0.904)
     ),
-    url(../public/her.jpeg);
+    url(/_next/static/media/her.21f4b6a44384d57420410878b945f57b.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
-  /*This clips from a polygon using these are x,y coordinates starting at top left corner. 
-  ex: 0,0 means move 0% from the x axis and 0% from the Y axis usin the x axis as a ref a given corner*/
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 89vh, 0 100%);
 }
 
 .header__text-box {
