@@ -1,8 +1,8 @@
-import React from "react";
-import { Menu } from "semantic-ui-react";
-import { Link } from "../routes";
-import Connect from "../components/connect";
-import { APP_HEADER_NAV } from "../constants/appConstant";
+import React from "react"
+import { Menu } from "semantic-ui-react"
+import { Link } from "../routes"
+import Connect from "../components/connect"
+import { APP_HEADER_NAV } from "../constants/appConstant"
 
 const Header = () => {
   return (
@@ -36,14 +36,14 @@ const Header = () => {
                   {nav.name}
                 </Link>
               </div>
-            );
+            )
           })}
 
           <Connect />
         </div>
       </header>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

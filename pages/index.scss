@@ -61,8 +61,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.6rem;
-  background-color: #8350c0;
-  color: #265dcd;
+  // background-color: #8350c0;
+  // color: #265dcd;
   margin: 0;
 }
 
@@ -98,7 +98,7 @@ code {
 }
 
 .header__text-box {
-  position: absolute;
+  position: fixed;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
