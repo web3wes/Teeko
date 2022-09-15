@@ -4,10 +4,7 @@ body {
   /* padding: 20px 20px 60px; */
   /* max-width: 680px; */
   margin: 0 auto;
-  background-image: linear-gradient(to right bottom,
-      rgba(126, 111, 213, 0.571),
-      rgba(106, 49, 210, 0.735)),
-    url("https://static.vecteezy.com/system/resources/previews/003/297/021/non_2x/isometric-dj-party-set-vector.jpg");
+
   /* background-repeat: no-repeat; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -76,9 +73,11 @@ article:hover {
   animation-duration: 0.2s;
   animation-iteration-count: initial;
 
-  background-image: linear-gradient(to right bottom,
+  background-image: linear-gradient(
+      to right bottom,
       rgba(255, 255, 255, 0.968),
-      rgba(0, 0, 0, 0.995)),
+      rgba(0, 0, 0, 0.995)
+    ),
     url(https://static.vecteezy.com/system/resources/previews/003/297/021/non_2x/isometric-dj-party-set-vector.jpg);
   backdrop-filter: blur(1.5px);
   -webkit-background-size: cover;
@@ -89,7 +88,6 @@ article:hover {
 }
 
 @keyframes blur-background {
-
   /* 50% {
     background-image: linear-gradient(
         to right bottom,
@@ -112,17 +110,21 @@ article:hover {
     backdrop-filter: blur(3px);
   } */
   0% {
-    background-image: linear-gradient(to right bottom,
+    background-image: linear-gradient(
+        to right bottom,
         rgba(126, 111, 213, 0.571),
-        rgba(106, 49, 210, 0.735)),
+        rgba(106, 49, 210, 0.735)
+      ),
       url(https://static.vecteezy.com/system/resources/previews/003/297/021/non_2x/isometric-dj-party-set-vector.jpg);
     backdrop-filter: blur(0.5px);
   }
 
   50% {
-    background-image: linear-gradient(to right bottom,
+    background-image: linear-gradient(
+        to right bottom,
         rgba(255, 255, 255, 0.968),
-        rgba(0, 0, 0, 0.995)),
+        rgba(0, 0, 0, 0.995)
+      ),
       url(https://static.vecteezy.com/system/resources/previews/003/297/021/non_2x/isometric-dj-party-set-vector.jpg);
     backdrop-filter: blur(1.5px);
     -webkit-background-size: cover;
@@ -381,8 +383,6 @@ button.ui.primary.right.floated.button.buy {
 .top-space {
   margin-top: 20px;
 }
-
-
 
 .btn {
   @apply font-bold py-2 px-4 rounded;

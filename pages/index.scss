@@ -61,7 +61,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.6rem;
-  color: #1c1d1f;
+  background-color: #8350c0;
+  color: #265dcd;
   margin: 0;
 }
 
@@ -79,7 +80,7 @@ code {
 
 .header {
   /* This fills 95% of the viewport */
-  height: 95vh;
+  height: 102vh;
   /* //right bottom states which direction the gradient is going to ; */
   background-image: linear-gradient(
       to right bottom,
@@ -92,8 +93,8 @@ code {
   position: relative;
   /*This clips from a polygon using these are x,y coordinates starting at top left corner. 
   ex: 0,0 means move 0% from the x axis and 0% from the Y axis usin the x axis as a ref a given corner*/
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 89vh, 0 100%);
 }
 
 .header__text-box {
