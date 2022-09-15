@@ -1,0 +1,93 @@
+.component--header {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  z-index: 1010;
+  header {
+    background: rgba(230, 230, 230, 0.947);
+    height: 4rem;
+    padding: 0 2.4rem;
+    position: relative;
+    z-index: 1010;
+  }
+  .app-logo {
+    height: 38px;
+    width: 100px;
+    position: relative;
+  }
+}
+
+.component--subheader {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  z-index: 1010;
+  background: #fff;
+  border-top: 0.05rem solid rgba(6, 5, 5, 0.482);
+
+  header {
+    background: #fff;
+    height: 2rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1010;
+    align-content: center;
+    display: table;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+.search-form-autocompleter {
+  padding: 0 1.5rem;
+  input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #1c1d1f;
+    border-radius: 9999px;
+    background-color: #f7f9fa;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.menu-nav-list {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+
+  .btn-menu {
+    display: inline-block;
+    padding-left: 30px;
+    justify-content: center;
+  }
+  a:hover {
+    color: #401b9c;
+  }
+}
+
+.login-btn,
+.sign-btn,
+.card-btn {
+  a {
+    border-radius: inherit;
+  }
+  a:hover {
+    color: inherit;
+    background-color: inherit;
+  }
+}
+.card-btn {
+  a {
+    border: none;
+    box-shadow: none !important;
+  }
+}
+
+/****************Run time add class*************/
+
+.auth-header {
+  header {
+    background-color: #e1b4ff;
+  }
+}
