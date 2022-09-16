@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { Card, Button, Image } from "semantic-ui-react";
-import factory from "../ethereum/factory";
-import Layout from "../components/Layout";
-import { Link } from "../routes";
-import Connect from "../components/connect";
-import { useWeb3 } from "@3rdweb/hooks";
-import web3 from "../ethereum/web3";
-import CampaignNew from "./campaigns/new";
-import Campaign from "../ethereum/campaign";
+import React, { Component } from "react"
+import { Card, Button, Image } from "semantic-ui-react"
+import factory from "../ethereum/factory"
+import Layout from "../components/Layout"
+import { Link } from "../routes"
+import Connect from "../components/connect"
+import { useWeb3 } from "@3rdweb/hooks"
+import web3 from "../ethereum/web3"
+import CampaignNew from "./campaigns/new"
+import Campaign from "../ethereum/campaign"
 
 class CampaignIndex extends Component {
   static async getInitialProps() {
-    const campaigns = await factory.methods.getDeployedCampaigns().call();
+    const campaigns = await factory.methods.getDeployedCampaigns().call()
 
     // const allCampaigns = await Promise.all(
     //   Array(parseInt(campaigns.length))
@@ -22,26 +22,26 @@ class CampaignIndex extends Component {
     //     })
     // );
 
-    return { campaigns };
+    return { campaigns }
   }
 
   renderRow() {
     return this.props.campaigns.map((oneCampaign) => {
       // let campaign = Campaign(oneCampaign);
-      return campaign.methods.getSummary().call();
-    });
+      return campaign.methods.getSummary().call()
+    })
   }
 
   renderCampaigns() {
     const items = this.props.campaigns.map((address, showName) => {
       async function get() {
-        let campaign = Campaign(address);
-        let oneCampaign = await campaign.methods.getSummary().call();
-        console.log(oneCampaign);
+        let campaign = Campaign(address)
+        let oneCampaign = await campaign.methods.getSummary().call()
+        console.log(oneCampaign)
         // expected output: "resolved"
       }
 
-      get();
+      get()
 
       return {
         Image:
@@ -60,7 +60,9 @@ class CampaignIndex extends Component {
                 {address}
                 <p class>{address}</p>
                 <p class>{address}</p>
-                <button class="ui primary right floated button buy"></button>
+                <button class="ui primary right floated button buy">
+                  Show details
+                </button>
               </div>
             </div>
             {/* <img
@@ -71,9 +73,9 @@ class CampaignIndex extends Component {
           </Link>
         ),
         fluid: true,
-      };
-    });
-    return <Card.Group items={items} />;
+      }
+    })
+    return <Card.Group items={items} />
   }
 
   render() {
@@ -100,8 +102,8 @@ class CampaignIndex extends Component {
           </div>
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default CampaignIndex;
+export default CampaignIndex
