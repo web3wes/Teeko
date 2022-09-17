@@ -144,11 +144,9 @@ const CampaignShow = (props) => {
 export default CampaignShow
 
 export async function getServerSideProps(props) {
-  let campaign = await Campaign(
-    props.query.address
-      ? props.query.address
-      : "0x807A21f7D22E1Dba5b878661BD455F0d31D62858"
-  )
+  let contractAddress = props.resolvedUrl.split("/campaigns/")[1]
+
+  let campaign = await Campaign(contractAddress)
 
   let summary = await campaign.methods.getSummary().call()
 
