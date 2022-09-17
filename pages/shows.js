@@ -60,7 +60,9 @@ class CampaignIndex extends Component {
                 {address}
                 <p class>{address}</p>
                 <p class>{address}</p>
-                <button class="ui primary right floated button buy"></button>
+                <button class="ui primary right floated button buy">
+                  Show Details
+                </button>
               </div>
             </div>
           </Link>

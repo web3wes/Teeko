@@ -68,4 +68,3 @@ At present, wallet addresses are passed as props through page navigation, so att
 
 This a High priority issue that I'll be fixing in parallel updating the layout. 
 
-
