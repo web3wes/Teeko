@@ -62,7 +62,7 @@ This app currently doesn't support mobile wallets, but there is a plan to build 
 
 
 
-4: **Some pages are flow dependant**
+4: **Some pages are flow dependant** (Resolved)
 
 At present, wallet addresses are passed as props through page navigation, so attempting to navigate the wallet or shows page through from their links along will result in a 404 Error
 
