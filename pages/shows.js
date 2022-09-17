@@ -48,7 +48,7 @@ class CampaignIndex extends Component {
           "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
         // header: address,
         description: (
-          <Link route={`/campaigns/${address}`}>
+          <Link route={`campaigns/${address}`}>
             <div class="row">
               <div class="col-1-of-3">
                 <img
