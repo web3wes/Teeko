@@ -65,7 +65,7 @@ class CampaignIndex extends Component {
               <span class="heading-primary--sub">will show for crypto</span>
             </h1>
 
-            <a href="/test" class="btn btn--white btn--animated">
+            <a href="/shows" class="btn btn--white btn--animated">
               {/* Read <Link href="/posts/first-post">this page!</Link> */} Find
               Upcoming events{" "}
             </a>
