@@ -167,7 +167,11 @@ class CampaignNew extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
+      <Form
+        className="h-2/5"
+        onSubmit={this.onSubmit}
+        error={!!this.state.errorMessage}
+      >
         <Form.Field>
           <h2 class="heading centered">Add Your Show</h2>
           <label>Ticket Price</label>

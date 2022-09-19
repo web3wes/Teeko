@@ -5,7 +5,7 @@ import Header from "./Header"
 
 const Layout = (props) => {
   return (
-    <div class="container mx-auto">
+    <div class="container mx-auto max-w-full">
       <Head>
         <link
           rel="stylesheet"

@@ -61,14 +61,15 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.6rem;
-<<<<<<< HEAD
-  // background-color: #8350c0;
-  // color: #265dcd;
-=======
-  background-image: url(styles/mysvg.svg);
+  background-image: url(../styles/mysvg.svg);
+  background-position: bottom;
   color: #265dcd;
->>>>>>> develop
   margin: 0;
+}
+
+.ui.form {
+  font-size: 1rem;
+  height: 50rem;
 }
 
 code {
