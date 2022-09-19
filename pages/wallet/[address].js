@@ -1,36 +1,36 @@
-import React, { Component, useState } from "react";
-import { Button, Table } from "semantic-ui-react";
-import { Link } from "../../routes";
-import Layout from "../../components/Layout";
-import Campaign from "../../ethereum/campaign";
-import Ticket from "../../ethereum/tickets";
-import TicketRow from "../../components/TicketRow";
-import web3 from "../../ethereum/web3";
-import QRCode from "react-qr-code";
+import React, { Component, useState } from "react"
+import { Button, Table } from "semantic-ui-react"
+import { Link } from "../../routes"
+import Layout from "../../components/Layout"
+import Campaign from "../../ethereum/campaign"
+import Ticket from "../../ethereum/tickets"
+import TicketRow from "../../components/TicketRow"
+import web3 from "../../ethereum/web3"
+import QRCode from "react-qr-code"
 
 class RequestIndex extends Component {
   static async getInitialProps(props) {
     // const [count, setCount] = useState(0);
     const ticketsCount = await Ticket.methods
       .getTicketsCount(props.query.address)
-      .call();
+      .call()
     // const approversCount = await campaign.methods.approversCount().call();
-    const water = "Water";
+    const water = "Water"
     const tickets = await Promise.all(
       Array(parseInt(ticketsCount))
         .fill()
         .map((element, index) => {
-          return Ticket.methods.userTickets(props.query.address, index).call();
+          return Ticket.methods.userTickets(props.query.address, index).call()
         })
-    );
+    )
 
-    return { tickets, ticketsCount, water };
+    return { tickets, ticketsCount, water }
 
     // 0x544aB7D5741863278E85383B933A7e15Cb7e809f
   }
 
   handleClick() {
-    console.log("this is:", this);
+    console.log("this is:", this)
   }
 
   renderRows() {
@@ -53,12 +53,12 @@ class RequestIndex extends Component {
             // approversCount={this.props.approversCount}
           />
         </a>
-      );
-    });
+      )
+    })
   }
 
   render() {
-    const { Header, Row, HeaderCell, Body } = Table;
+    const { Header, Row, HeaderCell, Body } = Table
 
     return (
       <Layout>
@@ -107,8 +107,8 @@ class RequestIndex extends Component {
           </a>
         </div>
       </Layout>
-    );
+    )
   }
 }
 
-export default RequestIndex;
+export default RequestIndex
