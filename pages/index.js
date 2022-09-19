@@ -58,11 +58,15 @@ class CampaignIndex extends Component {
   render() {
     return (
       <body>
-        <header class="header">
+        <header class="header w-full">
           <div class="header__text-box">
             <h1 class="heading-primary">
-              <span class="heading-primary--main">Teeko</span>
-              <span class="heading-primary--sub">will show for crypto</span>
+              <span class="heading-primary--main xs:text-2xl sm:text-3xl">
+                Teeko
+              </span>
+              <span class="heading-primary--sub xs:text-base xs:tracking-wider sm:text-xl sm:tracking-widest">
+                will show for crypto
+              </span>
             </h1>
 
             <a href="/shows" class="btn btn--white btn--animated">

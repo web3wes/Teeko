@@ -6,7 +6,7 @@ export default function Connect() {
   const { connectWallet, address, error } = useWeb3()
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-slate-100">
+    <div className="flex flex-col items-center justify-center ">
       {address ? (
         // <p className="px-2 py-1 rounded-full bg-gray-200 hover:bg-gray-300 font-mono font-medium cursor-pointer duration-100">
         //   {address}
