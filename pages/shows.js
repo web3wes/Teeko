@@ -76,25 +76,21 @@ class CampaignIndex extends Component {
   render() {
     return (
       <Layout>
-        <div class="top-space">
+        {/* <div class="top-space flex flex-col text-2xl sm:text-2xl">
           <div class="flex1 row">
-            {/* <Link route="/campaigns/new">
-            <a>
-              <Button
-                floated="right"
-                content="Create Campaign"
-                icon="add circle"
-                primary
-              />
-            </a> */}
-            {/* </Link>
-             */}
             <div class="col-2-of-3 scroll-y">{this.renderCampaigns()}</div>
 
             <div class="content blue col-1-of-3">
               <CampaignNew />
             </div>
           </div>
+        </div> */}
+
+        <div class="flex flex-col lg:flex-row lg:grid grid-cols-2 gap-4 lg:h-0 ">
+          <div class="col-2-of-3 scroll-y lg:h-4/5  mt-8 ">
+            {this.renderCampaigns()}
+          </div>
+          <CampaignNew />
         </div>
       </Layout>
     )
